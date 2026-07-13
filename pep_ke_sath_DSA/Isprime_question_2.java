@@ -7,15 +7,30 @@ class Isprime_question_2{
         System.out.println("Enter the number");
         int n = scr.nextInt();
         int i;
-        for( i=2; i<n; i++){
+        if (n <= 1) {
+            System.out.println("Not Prime");
+            return;
+        }
+        // for( i=2; i<n; i++){
+        //     if(n%i==0){
+        //         System.err.println("Not a Prime number");
+        //         break;
+        //     }
+        // }
+        
+        // if(i == n){
+        //     System.err.println("Prime number");
+        // }
+
+
+        for (i = 2; i*i <= n; i++) {
             if(n%i==0){
-                System.err.println("Not a Prime number");
-                break;
+                System.out.println("Not a prime number");
+                return;
             }
         }
         
-        if(i == n){
-            System.err.println("Prime number");
-        }
+            System.out.println("Prime number");
+        
     }
 }
