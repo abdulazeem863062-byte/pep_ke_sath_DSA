@@ -1,6 +1,6 @@
 class DigitofaNumber_6 {
     public static void main(String[] args) {
-         int n = 34547;
+         int n = 1000;
         int temp = n;
         int divisor = 1;
 
